@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+
+    <title>Side bar code by Amit Kumar</title>
+  </head>
+  <body>
+    <div class="row mt-3" id="body-row">
+  <!-- Seitenleiste -->
+  <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
+    <!-- d- * verbirgt die Sidebar in kleineren Geräten. Die Einträge können im Navbar-Menü gespeichert werden -->
+    <!-- Bootstrap-Listengruppe -->
+    <ul class="list-group">
+      <!-- Trennzeichen mit Titel -->
+      
+      <!-- / END Separator -->
+      <!-- Menü mit Untermenü -->
+      <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justyfy-content-start align-items-center">
+          <span class="fa fa-tachometer mr-3"></span>
+          <span class="menu-collapsed">Dashboard</span>
+          <span class="fa fa-caret-down mr-3"></span>
+        </div>
+      </a>
+      <!-- Inhalt des Untermenüs -->
+      <div id="submenu1" class="collapse sidebar-submenu">
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Charts</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Reports</span>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+          <span class="menu-collapsed">Tables</span>
+        </a>
+      </div>
+      <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-start align-items-center">
+         <span class="fa fa-user mr-3"></span>
+         <span class="menu-collapsed">Profile</span>
+         <span class="fa fa-caret-down"></span>
+        </div>
+       </a>
+      <!-- Inhalt des Untermenüs -->
+      <div id='submenu2' class="collapse sidebar-submenu">
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                <span class="fa fa-cog"></span>
+                    <span class="menu-collapsed">Settings</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
+                    <span class="fa fa-unlock"></span>
+                    <span class="menu-collapsed">Password</span>
+                </a>
+            </div>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-tasks mr-3"></span>
+                    <span class="menu-collapsed">Tasks</span>
+                </div>
+            </a>
+            <!-- Separator with title -->
+            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
+                <small>OPTIONS</small>
+            </li>
+            <!-- /END Separator -->
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-university fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Institutes</span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-graduation-cap mr-3"></span>
+                    <span class="menu-collapsed">Add Institutes <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-location-arrow fa-fw mr-3"></span>
+                    <span class="menu-collapsed">Coaching <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-pencil-square-o fa-fw mr-3"></span>
+                    <span class="menu-collapsed">School <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-commenting mr-3"></span>
+                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
+                </div>
+            </a>
+            <!-- Separator without title -->
+           
+            <!-- /END Separator -->
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-question-circle mr-3"></span>
+                    <span>Help</span>
+                </div>
+            </a>
+           
+            <a href="#" class="bg-dark list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-start align-items-center">
+                    <span class="fa fa-sign-out mr-3"></span>
+                    <span>Log out</span>
+                </div>
+            </a>
+            
+    </ul><!-- List Group END-->
+  </div> <!-- Seitenleiste-container END -->
+  <!-- MAIN -->
+    <!-- Main Col END -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
