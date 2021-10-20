@@ -1,131 +1,302 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 4 Dashboard Sidebar Menu Example</title>
+    
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<link rel="stylesheet" href="style.css">
-
-    <title>Side bar code by Amit Kumar</title>
+    <!-- Style CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+      	<!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css">
+      
   </head>
   <body>
-    <div class="row mt-3" id="body-row">
-  <!-- Seitenleiste -->
-  <div id="sidebar-container" class="sidebar-expanded d-none d-md-block">
-    <!-- d- * verbirgt die Sidebar in kleineren Geräten. Die Einträge können im Navbar-Menü gespeichert werden -->
-    <!-- Bootstrap-Listengruppe -->
-    <ul class="list-group">
-      <!-- Trennzeichen mit Titel -->
-      
-      <!-- / END Separator -->
-      <!-- Menü mit Untermenü -->
-      <a href="#submenu1" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justyfy-content-start align-items-center">
-          <span class="fa fa-tachometer mr-3"></span>
-          <span class="menu-collapsed">Dashboard</span>
-          <span class="fa fa-caret-down mr-3"></span>
-        </div>
-      </a>
-      <!-- Inhalt des Untermenüs -->
-      <div id="submenu1" class="collapse sidebar-submenu">
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-          <span class="menu-collapsed">Charts</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-          <span class="menu-collapsed">Reports</span>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-          <span class="menu-collapsed">Tables</span>
-        </a>
-      </div>
-      <a href="#submenu2" data-toggle="collapse" aria-expanded="false" class="bg-dark list-group-item list-group-item-action flex-column align-items-start">
-        <div class="d-flex w-100 justify-content-start align-items-center">
-         <span class="fa fa-user mr-3"></span>
-         <span class="menu-collapsed">Profile</span>
-         <span class="fa fa-caret-down"></span>
-        </div>
-       </a>
-      <!-- Inhalt des Untermenüs -->
-      <div id='submenu2' class="collapse sidebar-submenu">
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                <span class="fa fa-cog"></span>
-                    <span class="menu-collapsed">Settings</span>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">
-                    <span class="fa fa-unlock"></span>
-                    <span class="menu-collapsed">Password</span>
-                </a>
-            </div>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-tasks mr-3"></span>
-                    <span class="menu-collapsed">Tasks</span>
-                </div>
-            </a>
-            <!-- Separator with title -->
-            <li class="list-group-item sidebar-separator-title text-muted d-flex align-items-center menu-collapsed">
-                <small>OPTIONS</small>
-            </li>
-            <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-university fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Institutes</span>
-                </div>
-            </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-graduation-cap mr-3"></span>
-                    <span class="menu-collapsed">Add Institutes <span class="badge badge-pill badge-primary ml-2">5</span></span>
-                </div>
-            </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-location-arrow fa-fw mr-3"></span>
-                    <span class="menu-collapsed">Coaching <span class="badge badge-pill badge-primary ml-2">5</span></span>
-                </div>
-            </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-pencil-square-o fa-fw mr-3"></span>
-                    <span class="menu-collapsed">School <span class="badge badge-pill badge-primary ml-2">5</span></span>
-                </div>
-            </a>
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-commenting mr-3"></span>
-                    <span class="menu-collapsed">Messages <span class="badge badge-pill badge-primary ml-2">5</span></span>
-                </div>
-            </a>
-            <!-- Separator without title -->
-           
-            <!-- /END Separator -->
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-question-circle mr-3"></span>
-                    <span>Help</span>
-                </div>
-            </a>
-           
-            <a href="#" class="bg-dark list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-start align-items-center">
-                    <span class="fa fa-sign-out mr-3"></span>
-                    <span>Log out</span>
-                </div>
-            </a>
-            
-    </ul><!-- List Group END-->
-  </div> <!-- Seitenleiste-container END -->
-  <!-- MAIN -->
-    <!-- Main Col END -->
+ <header class="intro">
+ <h1> Bootstrap 4 Dashboard Sidebar Menu Example </h1>
+ <p> A responsive sidebar menu template using Bootstrap 4.</p>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <div class="action">
+     <a href="https://www.codehim.com/bootstrap/bootstrap-4-sidebar-menu-responsive-template/" title="Back to download and tutorial page" class="btn back">Back to Tutorial</a>
+
+ </div>
+ 
+ </header>
+  
+ <main>
+  <article>
+  <p>This page demo the Bootstrap 4 responsive dahboard sidebar menu.</p>
+ 
+      
+      
+      <!-- Sidebar Menu HTML -->
+      <div class="page-wrapper chiller-theme toggled">
+<a id="show-sidebar" class="btn btn-sm btn-dark" href="#">
+<i class="fas fa-bars"></i>
+</a>
+<nav id="sidebar" class="sidebar-wrapper">
+<div class="sidebar-content">
+<div class="sidebar-brand">
+   <a href="#">pro sidebar</a>
+   <div id="close-sidebar">
+      <i class="fas fa-times"></i>
+   </div>
+</div>
+<div class="sidebar-header">
+   <div class="user-pic">
+      <img class="img-responsive img-rounded" src="https://raw.githubusercontent.com/azouaoui-med/pro-sidebar-template/gh-pages/src/img/user.jpg"
+         alt="User picture">
+   </div>
+   <div class="user-info">
+      <span class="user-name">Jhon
+      <strong>Smith</strong>
+      </span>
+      <span class="user-role">Administrator</span>
+      <span class="user-status">
+      <i class="fa fa-circle"></i>
+      <span>Online</span>
+      </span>
+   </div>
+</div>
+<!-- sidebar-header  -->
+<div class="sidebar-search">
+   <div>
+      <div class="input-group">
+         <input type="text" class="form-control search-menu" placeholder="Search...">
+         <div class="input-group-append">
+            <span class="input-group-text">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+         </div>
+      </div>
+   </div>
+</div>
+<!-- sidebar-search  -->
+<div class="sidebar-menu">
+   <ul>
+      <li class="header-menu">
+         <span>General</span>
+      </li>
+      <li class="sidebar-dropdown">
+         <a href="#">
+         <i class="fa fa-tachometer-alt"></i>
+         <span>Dashboard</span>
+         <span class="badge badge-pill badge-warning">New</span>
+         </a>
+         <div class="sidebar-submenu">
+            <ul>
+               <li>
+                  <a href="#">Dashboard 1
+                  <span class="badge badge-pill badge-success">Pro</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Dashboard 2</a>
+               </li>
+               <li>
+                  <a href="#">Dashboard 3</a>
+               </li>
+            </ul>
+         </div>
+      </li>
+      <li class="sidebar-dropdown">
+         <a href="#">
+         <i class="fa fa-shopping-cart"></i>
+         <span>E-commerce</span>
+         <span class="badge badge-pill badge-danger">3</span>
+         </a>
+         <div class="sidebar-submenu">
+            <ul>
+               <li>
+                  <a href="#">Products
+                  </a>
+               </li>
+               <li>
+                  <a href="#">Orders</a>
+               </li>
+               <li>
+                  <a href="#">Credit cart</a>
+               </li>
+            </ul>
+         </div>
+      </li>
+      <li class="sidebar-dropdown">
+         <a href="#">
+         <i class="far fa-gem"></i>
+         <span>Components</span>
+         </a>
+         <div class="sidebar-submenu">
+            <ul>
+               <li>
+                  <a href="#">General</a>
+               </li>
+               <li>
+                  <a href="#">Panels</a>
+               </li>
+               <li>
+                  <a href="#">Tables</a>
+               </li>
+               <li>
+                  <a href="#">Icons</a>
+               </li>
+               <li>
+                  <a href="#">Forms</a>
+               </li>
+            </ul>
+         </div>
+      </li>
+      <li class="sidebar-dropdown">
+         <a href="#">
+         <i class="fa fa-chart-line"></i>
+         <span>Charts</span>
+         </a>
+         <div class="sidebar-submenu">
+            <ul>
+               <li>
+                  <a href="#">Pie chart</a>
+               </li>
+               <li>
+                  <a href="#">Line chart</a>
+               </li>
+               <li>
+                  <a href="#">Bar chart</a>
+               </li>
+               <li>
+                  <a href="#">Histogram</a>
+               </li>
+            </ul>
+         </div>
+      </li>
+      <li class="sidebar-dropdown">
+         <a href="#">
+         <i class="fa fa-globe"></i>
+         <span>Maps</span>
+         </a>
+         <div class="sidebar-submenu">
+            <ul>
+               <li>
+                  <a href="#">Google maps</a>
+               </li>
+               <li>
+                  <a href="#">Open street map</a>
+               </li>
+            </ul>
+         </div>
+      </li>
+      <li class="header-menu">
+         <span>Extra</span>
+      </li>
+      <li>
+         <a href="#">
+         <i class="fa fa-book"></i>
+         <span>Documentation</span>
+         <span class="badge badge-pill badge-primary">Beta</span>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+         <i class="fa fa-calendar"></i>
+         <span>Calendar</span>
+         </a>
+      </li>
+      <li>
+         <a href="#">
+         <i class="fa fa-folder"></i>
+         <span>Examples</span>
+         </a>
+      </li>
+   </ul>
+</div>
+      <!-- sidebar-menu  -->
+    </div>
+    <!-- sidebar-content  -->
+    <div class="sidebar-footer">
+      <a href="#">
+        <i class="fa fa-bell"></i>
+        <span class="badge badge-pill badge-warning notification">3</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-envelope"></i>
+        <span class="badge badge-pill badge-success notification">7</span>
+      </a>
+      <a href="#">
+        <i class="fa fa-cog"></i>
+        <span class="badge-sonar"></span>
+      </a>
+      <a href="#">
+        <i class="fa fa-power-off"></i>
+      </a>
+    </div>
+  </nav>
+  </div>
+  <!-- sidebar-wrapper  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    
+      
+      <!-- End Sidebar Menu HTML -->
+      
+      
+      
+      
+      
+      
+      
+  </article>
+ </main>
+ 
+  <footer class="credit">Author: Puskar Adhikari - Distributed By: <a title="Awesome web design code & scripts" href="https://www.codehim.com?source=demo-page" target="_blank">CodeHim</a></footer>
+  
+      <script>
+      jQuery(function ($) {
+
+    $(".sidebar-dropdown > a").click(function() {
+  $(".sidebar-submenu").slideUp(200);
+  if (
+    $(this)
+      .parent()
+      .hasClass("active")
+  ) {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .parent()
+      .removeClass("active");
+  } else {
+    $(".sidebar-dropdown").removeClass("active");
+    $(this)
+      .next(".sidebar-submenu")
+      .slideDown(200);
+    $(this)
+      .parent()
+      .addClass("active");
+  }
+});
+
+$("#close-sidebar").click(function() {
+  $(".page-wrapper").removeClass("toggled");
+});
+$("#show-sidebar").click(function() {
+  $(".page-wrapper").addClass("toggled");
+});
+
+
+   
+   
+});
+      
+      </script>
+  
   </body>
 </html>
